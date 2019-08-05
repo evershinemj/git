@@ -57,3 +57,4 @@ git config gui.displayUntracted false
 git commit --signoff
 git branch --set-upstream-to=origin/master
 git pull origin master
+git push origin master
