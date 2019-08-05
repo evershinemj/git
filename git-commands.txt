@@ -35,3 +35,14 @@ git config color.grep.match cyan
 git config color.grep.filename green
 git config color.grep.lineNumber red
 git config color.branch.current cyan
+git remote show origin
+git clean -f [--] [path]
+git clean -d -f [--] [path]
+git clean -n|--dry-run
+git clean -i|--interactive
+git config clean.requireFalse false
+git clean
+git clean -x  # remove not only untracked files, but ignored files
+git clean -nx
+git clean -X  # remove ignored files
+git clean -nX
