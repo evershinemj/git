@@ -31,3 +31,7 @@ git log --grep=<pattern> --perl-regexp
 git config --local grep.linenumber=true
 git config --local grep.extendedRegexp=true
 git config --get <key>
+git config color.grep.match cyan
+git config color.grep.filename green
+git config color.grep.lineNumber red
+git config color.branch.current cyan
