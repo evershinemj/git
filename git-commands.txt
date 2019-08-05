@@ -1,0 +1,1 @@
+git commit --file=<file>  # take commit message from given file
