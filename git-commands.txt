@@ -53,3 +53,5 @@ git shortlog
 git archive --format=zip --output <foo.zip> --prefix=<prefix> HEAD  # add a prefix to every file and directory inside the archive
 git citool  # use gui for commit
 git whatchanged # similar to git log, but show raw diff
+git config gui.displayUntracted false
+git commit --signoff
