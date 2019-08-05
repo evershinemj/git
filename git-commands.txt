@@ -46,3 +46,10 @@ git clean -x  # remove not only untracked files, but ignored files
 git clean -nx
 git clean -X  # remove ignored files
 git clean -nX
+git archive --format=zip --output <foo.zip> HEAD
+git archive --list
+git archive --format=tar --output <foo.tar> --verbose HEAD
+git shortlog
+git archive --format=zip --output <foo.zip> --prefix=<prefix> HEAD  # add a prefix to every file and directory inside the archive
+git citool  # use gui for commit
+git whatchanged # similar to git log, but show raw diff
