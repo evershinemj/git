@@ -1,1 +1,17 @@
 git commit --file=<file>  # take commit message from given file
+git add --patch  # just as `git add --interactive` and then choose "patch"
+git add --interactive
+git add --update
+git commit --patch  # just like `git add --patch` and then `git commit`, or `git commit --interactive` and then choose "patch"
+git commit --interactive
+git commit -C <commit>|--reuse-message=<commit>
+git commit -c <commit>|--reedit-message=<commit>
+git commit --dry-run  # do not actually commit, just show some information 
+git commit --short  # implies --dry-run, in a short format
+git commit --long   # implies --dry-run, in a long format
+git commit -t <file>|--template=<file>  # use a template file for commit, e.g. commit.template
+git commit --cleanup=<mode> # <mode> could be strip, whitespace, default, etc.
+git commit -v|--verbose
+git commit --status # defaults to on, but can be used to override configuration variable commit.status
+git config --local commit.status off
+git config --locat commit.verbose true
