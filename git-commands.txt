@@ -58,3 +58,5 @@ git commit --signoff
 git branch --set-upstream-to=origin/master
 git pull origin master
 git push origin master
+git add -u|--update	# stage modified and deleted files (but not new files)
+git add --all	# stage modified, deleted and new files
