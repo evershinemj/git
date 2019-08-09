@@ -64,3 +64,4 @@ git push origin --delete <branch>
 git remote rename <old-name> <new-name>
 git branch --set-upstream-to=origin/foo foo	# assume current branch is master
 git branch --set-upstream-to=<upstream> | -u <upstream>	[<branch-name>]	
+git status --ignored
