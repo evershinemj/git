@@ -1,0 +1,7 @@
+man 7 gittutorial
+man 7 gittutorial-2
+man 7 giteveryday
+man 7 gitcore-tutorial
+man 7 gitglossary
+man 5 gitignore
+man 5 gitrepository-layout
