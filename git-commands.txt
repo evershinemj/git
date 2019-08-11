@@ -68,3 +68,6 @@ git status --ignored
 git status --show-stash
 git --no-pager
 git --no-pager log
+git diff -- .gitignore		    # when .gitignore is staged, and is modified after being staged, these diffs show different outputs
+git diff --staged -- .gitignore	    # when .gitignore is staged, and is modified after being staged, these diffs show different outputs
+git diff HEAD -- .gitignore	    # when .gitignore is staged, and is modified after being staged, these diffs show different outputs
