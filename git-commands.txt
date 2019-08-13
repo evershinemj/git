@@ -62,3 +62,13 @@ git add -u|--update	# stage modified and deleted files (but not new files)
 git add --all	# stage modified, deleted and new files
 git push origin --delete <branch>
 git remote rename <old-name> <new-name>
+git --man-path
+git branch --set-upstream-to=origin/foo foo	# assume current branch is master
+git branch --set-upstream-to=<upstream> | -u <upstream>	[<branch-name>]	
+git status --ignored
+git status --show-stash
+git --no-pager
+git --no-pager log
+git diff -- .gitignore		    # when .gitignore is staged, and is modified after being staged, these diffs show different outputs
+git diff --staged -- .gitignore	    # when .gitignore is staged, and is modified after being staged, these diffs show different outputs
+git diff HEAD -- .gitignore	    # when .gitignore is staged, and is modified after being staged, these diffs show different outputs
