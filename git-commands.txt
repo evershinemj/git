@@ -61,3 +61,4 @@ git push origin master
 git add -u|--update	# stage modified and deleted files (but not new files)
 git add --all	# stage modified, deleted and new files
 git push origin --delete <branch>
+git remote rename <old-name> <new-name>
