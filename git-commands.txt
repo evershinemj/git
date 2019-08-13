@@ -72,3 +72,6 @@ git --no-pager log
 git diff -- .gitignore		    # when .gitignore is staged, and is modified after being staged, these diffs show different outputs
 git diff --staged -- .gitignore	    # when .gitignore is staged, and is modified after being staged, these diffs show different outputs
 git diff HEAD -- .gitignore	    # when .gitignore is staged, and is modified after being staged, these diffs show different outputs
+git log --since='10 days ago'
+git log --until='10 days ago'
+git log -10	# show ten logs
