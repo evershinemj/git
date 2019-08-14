@@ -79,3 +79,5 @@ git log --merges
 git log --remotes
 git log --reverse
 git log --relative-date
+git diff origin/master HEAD
+git diff HEAD origin/master 
