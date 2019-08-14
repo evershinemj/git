@@ -77,3 +77,5 @@ git log --until='10 days ago'
 git log -10	# show ten logs
 git log --merges
 git log --remotes
+git log --reverse
+git log --relative-date
