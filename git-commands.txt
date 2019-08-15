@@ -82,3 +82,6 @@ git log --relative-date
 git diff origin/master HEAD
 git diff HEAD origin/master 
 git pull --rebase
+git fetch && git log --remotes
+git push origin master:foo  # push local master to origin/foo
+git push <remote> <local branch>:<remote branch>
