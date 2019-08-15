@@ -92,3 +92,6 @@ git flow config
 git flow log
 git push origin master:foo  # push local master to origin/foo
 git push origin <local-branch>:<remote-branch>
+git fetch && git log --remotes
+git push origin master:foo  # push local master to origin/foo
+git push <remote> <local branch>:<remote branch>
