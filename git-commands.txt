@@ -81,3 +81,4 @@ git log --reverse
 git log --relative-date
 git diff origin/master HEAD
 git diff HEAD origin/master 
+git pull --rebase
