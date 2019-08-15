@@ -1,0 +1,12 @@
+non-diverge:
+    master: a -> b
+    origin/master: a -> b -> c
+    after rebase(git rebase origin/master):
+    a -> b -> c # local master does not have its own patches (distinct commits)
+diverge:
+    master: a -> b
+    origin/master: a -> c
+    after rebase(git rebase origin/master):
+    a -> c -> b # apply local master's patches on top of origin/master
+
+rebase puts current branch's commits on top, like replaying these commits on the base of another branch
