@@ -88,3 +88,6 @@ git push <remote> <local branch>:<remote branch>
 git tag -a|--annotate <tagname> 
 git tag -a|--annotate <tagname> -m <message>
 git show <tag>	# show tag annotation, commit info and diffs
+git show --format=fuller
+git show --shortstat	# no diff, just one commit log
+git diff master HEAD -- <file>	# suppose current branch is not master
