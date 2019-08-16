@@ -91,3 +91,4 @@ git show <tag>	# show tag annotation, commit info and diffs
 git show --format=fuller
 git show --shortstat	# no diff, just one commit log
 git diff master HEAD -- <file>	# suppose current branch is not master
+git push --tags
