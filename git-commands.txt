@@ -85,3 +85,6 @@ git pull --rebase
 git fetch && git log --remotes
 git push origin master:foo  # push local master to origin/foo
 git push <remote> <local branch>:<remote branch>
+git tag -a|--annotate <tagname> 
+git tag -a|--annotate <tagname> -m <message>
+git show <tag>	# show tag annotation, commit info and diffs
