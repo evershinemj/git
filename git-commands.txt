@@ -1,8 +1,8 @@
 git commit --file=<file>  # take commit message from given file
-git add --patch  # just as `git add --interactive` and then choose "patch"
+git add --patch  # just as `git add --interactive` and then choose "patch"; have control over whether to add each hunk
 git add --interactive
 git add --update
-git commit --patch  # just like `git add --patch` and then `git commit`, or `git commit --interactive` and then choose "patch"
+git commit --patch  # just like `git add --patch` and then `git commit`, or `git commit --interactive` and then choose "patch"; if aborted, `git add --patch` is aborted
 git commit --interactive
 git commit -C <commit>|--reuse-message=<commit>
 git commit -c <commit>|--reedit-message=<commit>
@@ -35,7 +35,7 @@ git config color.grep.match cyan
 git config color.grep.filename green
 git config color.grep.lineNumber red
 git config color.branch.current cyan
-git remote show origin
+git remote show origin	# show detailed info about origin
 git clean -f [--] [path]
 git clean -d -f [--] [path]
 git clean -n|--dry-run
@@ -90,3 +90,5 @@ git flow release start <branch-name>
 git flow support start <branch-name>
 git flow config
 git flow log
+git push origin master:foo  # push local master to origin/foo
+git push origin <local-branch>:<remote-branch>

@@ -1,0 +1,51 @@
+@@ -1,8 +1,8 @@
+the first digit indicates the number of beginning line,
+the second indicates how many lines are shown 
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch foo
+# Your branch is ahead of 'origin/foo' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   git-commands.txt
+#
+# Untracked files:
+#	0001-On-branch-foo.patch
+#
+# ------------------------ >8 ------------------------
+# Do not modify or remove the line above.
+# Everything below it will be ignored.
+diff --git a/git-commands.txt b/git-commands.txt
+index 2d65dda..231a0f4 100644
+--- a/git-commands.txt
++++ b/git-commands.txt
+@@ -1,8 +1,8 @@
+ git commit --file=<file>  # take commit message from given file
+-git add --patch  # just as `git add --interactive` and then choose "patch"
++git add --patch  # just as `git add --interactive` and then choose "patch"; have control over whether to add each hunk
+ git add --interactive
+ git add --update
+-git commit --patch  # just like `git add --patch` and then `git commit`, or `git commit --interactive` and then choose "patch"
++git commit --patch  # just like `git add --patch` and then `git commit`, or `git commit --interactive` and then choose "patch"; if aborted, `git add --patch` is aborted
+ git commit --interactive
+ git commit -C <commit>|--reuse-message=<commit>
+ git commit -c <commit>|--reedit-message=<commit>
+@@ -35,7 +35,7 @@ git config color.grep.match cyan
+ git config color.grep.filename green
+ git config color.grep.lineNumber red
+ git config color.branch.current cyan
+-git remote show origin
++git remote show origin	# show detailed info about origin
+ git clean -f [--] [path]
+ git clean -d -f [--] [path]
+ git clean -n|--dry-run
+@@ -90,3 +90,5 @@ git flow release start <branch-name>
+ git flow support start <branch-name>
+ git flow config
+ git flow log
++git push origin master:foo  # push local master to origin/foo
++git push origin <local-branch>:<remote-branch>
