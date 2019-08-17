@@ -102,3 +102,6 @@ git show --format=fuller
 git show --shortstat	# no diff, just one commit log
 git diff master HEAD -- <file>	# suppose current branch is not master
 git push --tags
+git push origin foo # suppose foo doesn't exist remotely, then this command creates foo on remote repository
+git stash show
+git blame --show-email --show-name --show-number --show-stats <file>
