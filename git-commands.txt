@@ -82,3 +82,11 @@ git log --relative-date
 git diff origin/master HEAD
 git diff HEAD origin/master 
 git pull --rebase
+git flow init
+git flow feature start <branch-name>
+git flow bugfix start <branch-name>
+git flow hotfix start <branch-name>
+git flow release start <branch-name>
+git flow support start <branch-name>
+git flow config
+git flow log
