@@ -105,3 +105,8 @@ git push --tags
 git push origin foo # suppose foo doesn't exist remotely, then this command creates foo on remote repository
 git stash show
 git blame --show-email --show-name --show-number --show-stats <file>
+git branch --verbose
+git ls-tree HEAD|master
+git ls-tree -r HEAD
+git ls-tree -r -t HEAD	# show trees when recursing(besides blobs)
+git ls-tree --abbrev	# show partial prefix instead of 40-byte object
