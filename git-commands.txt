@@ -111,3 +111,5 @@ git ls-tree -r HEAD
 git ls-tree -r -t HEAD	# show trees when recursing(besides blobs)
 git ls-tree --abbrev	# show partial prefix instead of 40-byte object
 git add -f|--force <file>   # used to add ignored files
+git reset --soft HEAD^  # not touching index or working tree, just moving HEAD
+git reset --soft HEAD@{1}   # move back to HEAD@{1}, as shown in `git reflog`
