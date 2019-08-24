@@ -110,3 +110,4 @@ git ls-tree HEAD|master
 git ls-tree -r HEAD
 git ls-tree -r -t HEAD	# show trees when recursing(besides blobs)
 git ls-tree --abbrev	# show partial prefix instead of 40-byte object
+git add -f|--force <file>   # used to add ignored files
