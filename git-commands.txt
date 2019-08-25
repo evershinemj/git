@@ -113,3 +113,7 @@ git ls-tree --abbrev	# show partial prefix instead of 40-byte object
 git add -f|--force <file>   # used to add ignored files
 git reset --soft HEAD^  # not touching index or working tree, just moving HEAD
 git reset --soft HEAD@{1}   # move back to HEAD@{1}, as shown in `git reflog`
+git sync    # update local branches from upstream, likely an alias for `hub sync`
+git cherry-pick origin/master   # merge a specific commit
+git cherry-pick foo
+git cherry-pick origin/master~1
