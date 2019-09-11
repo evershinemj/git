@@ -114,3 +114,4 @@ git add -f|--force <file>   # used to add ignored files
 git reset --soft HEAD^  # not touching index or working tree, just moving HEAD
 git reset --soft HEAD@{1}   # move back to HEAD@{1}, as shown in `git reflog`
 git init --bare # no working tree, and what's in .git are now directory under the project; bare repositories are conventionally name with extension .git
+git rm --cached -r <folder> # recursive `rm --cached`
