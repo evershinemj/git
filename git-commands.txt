@@ -117,3 +117,8 @@ git sync    # update local branches from upstream, likely an alias for `hub sync
 git cherry-pick origin/master   # merge a specific commit
 git cherry-pick foo
 git cherry-pick origin/master~1
+git init --bare # no working tree, and what's in .git are now directory under the project; bare repositories are conventionally name with extension .git
+git push --follow-tags
+git config --global push.followTags true
+git push --no-follow-tags # used to override configuration above
+git push --mirror
