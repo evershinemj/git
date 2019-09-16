@@ -1,3 +1,4 @@
 hub browse <user>/<repository>
 hub browse evershinemj/markdown
 hub sync
+hub create <repo> # create repository <repo> on github, popping up github username and password prompt
