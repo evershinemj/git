@@ -122,3 +122,4 @@ git push --follow-tags
 git config --global push.followTags true
 git push --no-follow-tags # used to override configuration above
 git push --mirror
+git log -- <file> # show log for a specific file
