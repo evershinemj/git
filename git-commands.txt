@@ -125,3 +125,5 @@ git push --no-follow-tags # used to override configuration above
 git push --mirror
 git log -- <file> # show log for a specific file
 git diff master origin/master
+git config --get core.autocrlf
+git config core.autocrlf true
