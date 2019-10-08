@@ -17,3 +17,5 @@ copy
 ### S-ins
 paste
 
+### C-r
+reverse search. note that C-s doesn't work in gitbash 
