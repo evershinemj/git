@@ -129,3 +129,4 @@ git config --get core.autocrlf
 git config core.autocrlf true
 git push -f|--force
 git pull --allow-unrelated-histories
+git ls-files
